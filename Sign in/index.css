@@ -1,0 +1,432 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* header start */
+#menu-toggle {
+    display: none;
+}
+.header  img
+{
+    height: 78px;
+    width: 78px;
+    /* margin-top: -30px; */
+
+}
+.header
+{
+    border: 0;
+    width: 100%;
+    height: 80px;
+    margin-inline: auto;
+    display: flex;
+    justify-content:space-around;
+    background-color: white;
+    align-items: center;
+    /* padding: 10px 15px;  */
+    z-index: 10;
+    border-bottom: thin solid #E5E4DF;
+    /* position: relative; */
+    position: fixed;
+    
+}
+.menu ul
+{
+    font-family: "Poppins", Helvetica, Arial, Lucida, sans-serif;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    /* line-height: 14px; */
+    color:#081F89; 
+    margin-top: 20px;
+    font-weight: 600;
+    
+    
+    
+} 
+.menu ul li
+{
+    position: relative; }
+.menu ul a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+    /* line-height: 28px; */
+    color: #000000;
+    font-weight: 700;
+    font-style: normal;
+    font-family: "Poppins", Helvetica, Arial, Lucida, sans-serif;;
+    /* display: block; */
+}
+.menu .About:hover
+{
+    color:#5262AC;
+    
+} 
+.menu ul li a:hover
+{
+    background-color: #E5E4DF;
+    /* height: 100px; */
+
+
+}
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+.checkbtn
+{
+    color:#2EA3F2 ;
+    font-size: 25px;
+    display: none;
+
+
+}
+.About
+{
+    position: relative;
+    display: inline-block;
+    /* border: medium solid blue; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 25px;
+
+}
+.About .dropmenu1
+{
+    width: 220px;
+    position: absolute;
+    display: block;
+    border-top:medium solid #00208a;
+    padding: 25px 30px;
+    /* width: 10rem; */
+    background-color: #F9F9F7;
+    margin-top: 1.5rem;
+    box-shadow: 0 2px 5px  rgba(0, 0, 0, .1);
+    line-height: 2;
+    display: none;
+    transition: 0.2s;
+    
+    
+}                          
+.About .dropmenu1 li
+{
+    padding: 3px;   
+
+}
+.About .dropmenu1 li:hover
+{
+    background-color: #F9F9F7;
+    /* transform: scaleY(2.5); */
+    
+}
+ul  .About:hover > .dropmenu1
+{
+    display: block;
+    position: absolute;
+}
+.Program
+{
+    position: relative;
+    display: inline-block;
+    /* border: medium solid blue; */
+    /* padding: 35px; */
+    padding-top: 45px;
+    padding-bottom: 50px;
+    padding-right: 25px;
+}
+.Program .dropmenu2
+{
+    position: absolute;
+    display: block;
+    border-top:medium solid #00208a;
+    padding: 0.5rem 1.3rem;
+    width: 13rem;
+    background-color: #F9F9F7;
+    margin-top: 1.5rem;
+    box-shadow: 0 2px 5px  rgba(0, 0, 0, .1);
+    line-height: 2;
+    display: none;
+    
+}                           
+.Program .dropmenu2 li
+{
+    padding: 3px;   
+
+}
+.Program .dropmenu2 li:hover
+{
+    background-color: #F9F9F7;
+    
+}
+ul  .Program:hover > .dropmenu2
+{
+    display: block;
+    position: absolute;
+}
+.menu .Program:hover
+{
+    color:#5262AC;
+    
+} 
+.Admission
+{
+    position: relative;
+    display: inline-block;
+   
+    /* padding: 35px; */
+    padding-top: 45px;
+    padding-bottom: 50px;
+    padding-right: 25px;
+}
+.Admission .dropmenu3
+{
+    position: absolute;
+    display: block;
+    border-top:medium solid #00208a;
+    padding: 0.5rem 1.3rem;
+    width: 13rem;
+    background-color:#F9F9F7;
+    margin-top: 1.5rem;
+    box-shadow: 0 2px 5px  rgba(0, 0, 0, .1);
+    line-height: 2;
+    display: none;
+    
+}                           
+.Admission .dropmenu3 li
+{
+    padding: 3px;   
+
+}
+.Admission .dropmenu3 li:hover
+{
+    background-color: #F9F9F7;
+    
+}
+ul  .Admission:hover > .dropmenu3
+{
+    display: block;
+    position: absolute;
+}
+.menu .Admission:hover
+{
+    color:#5262AC;
+    /* background-color:#F9F9F7 ; */
+} 
+.E-portal
+{
+    position: relative;
+    display: inline-block;
+   
+    /* padding: 35px; */
+    padding-top: 45px;
+    padding-bottom: 50px;
+    padding-right: 25px;
+
+}
+.E-portal .dropmenu4
+{
+    position: absolute;
+    display: block;
+    border-top:medium solid #00208a;
+    padding: 0.5rem 1.3rem;
+    width: 13rem;
+    background-color: #F9F9F7;
+    background-color: transparent;
+    margin-top: 1.5rem;
+    box-shadow: 0 2px 5px  rgba(0, 0, 0, .1);
+    line-height: 2;
+    text-align: center;
+    display: none;
+    
+}                           
+.E-portal .dropmenu4 li
+{
+    padding: 3px;   
+    
+}
+.E-portal .dropmenu4 li:hover
+{
+    /* background-color: #F9F9F7; */
+    background-color: transparent;
+    
+}
+ul  .E-portal:hover > .dropmenu4
+{
+    display: block;
+    position: absolute;
+}
+.menu .E-portal:hover
+{
+    color:#5262AC;
+    
+} 
+.scholarship
+{
+    padding-right: 2rem;
+} 
+.menu ul li .ship 
+{
+    color:#081F89; 
+    
+}
+.menu ul li .news 
+{
+    color:#081F89; 
+}
+.menu ul li .ship:hover
+{
+    color:#5262AC;
+    
+} 
+.menu ul li .news:hover
+{
+    color:#5262AC;
+    
+} 
+/* header end */
+
+.main-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+}
+.container {
+    width: 90vh;
+    height: 60vh;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.logo {
+    width: 30px;
+}
+
+.log1 {
+    display: flex;
+    align-items: left;
+    padding: 20px;
+}
+
+.text-container {
+    padding-left: 10px;
+    text-align: left;
+}
+
+.login {
+    text-align: left;
+    padding-bottom: 20px;
+}
+.login h3
+{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    Line-Height:28px;
+    Color:#212529;
+}
+.login p
+{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    Line-Height:20px;
+    Color:#49494C;
+
+}
+.form-container {
+    text-align: left;
+    
+}
+.form-group {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+
+.form-group input {
+    width: 100%;
+    padding: 15px 35px; /* Add padding for the icon */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+
+
+.form-group .icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 16px;
+    pointer-events: none;
+}
+
+.form-group .studentId 
+{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-style: normal;
+    font-weight:500;
+    font-size:12px;
+    line-height:16px;
+    padding-bottom: 5px;
+    color: #49494C;
+
+}
+.form-group .password
+{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-style:normal;
+    font-weight: 500;
+    font-size:12px;
+    line-height: 16px;
+    color:#49494C;
+    padding-bottom: 5px;
+    
+
+}
+
+
+.btn {
+    background-color: #112257;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+Line-Height: 20px;
+Color:#FFFFFF;
+}
+
+.Powered
+{
+    padding: 20px;
+}
+.Powered img
+{
+    width: 80px;
+
+}

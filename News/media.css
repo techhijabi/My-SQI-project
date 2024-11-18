@@ -1,0 +1,143 @@
+@media (max-width: 768px) {
+    .menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      /* z-index: 1000; */
+      padding: 20px;
+    }
+  
+    .menu ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    /* Toggle Menu Display */
+    #menu-toggle:checked + .menu-icon + .menu {
+      display: flex;
+    }
+  }
+
+@media (max-width: 951px) {
+    .section1 {
+        grid-template-columns: repeat(2fr,1);
+        width: 100%;
+        align-items: center;
+    }
+    .section1 .exam
+    {
+        width: 100%;
+    }
+
+    .section1 .exam,
+    .section1 .jamb {
+        width: 100%; /* Ensure both sections take full width */
+        max-width: 100%;
+    }
+
+    .section1 .jamb {
+        display: block; /* Ensure the .jamb section displays correctly */
+    }
+
+
+    .section1 img {
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .section1 {
+        padding: 20px;
+    }
+
+    .section1 .exam h2 a {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .section1 .jamb h5 a {
+        font-size: 18px;
+    }
+
+    .jamb .college {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+@media (max-width: 900px) {
+    .section10 .News {
+        grid-template-columns: repeat(2fr 1);
+        align-items: center;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .section10 .News {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section10 h2 {
+        font-size: 32px;
+        padding: 1rem;
+    }
+
+    
+
+    .section10 .row {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        gap: 20px;
+    }
+
+    .section10 .row .col-md-4 {
+        width: 100%;
+    }
+
+    .section10 .row img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (max-width: 950px) {
+    .footer-container .footer-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        /* padding: 5rem; */
+       
+    }
+}
+
+@media (max-width: 593px) {
+    .footer-container .footer-list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .footer-list .purple
+    {
+        
+        font-size: 1rem;
+        width: 100%;
+    }
+    .footer-list .text li
+    {
+        font-size: 1rem;
+        width: 20rem;
+    }
+}
+
+  
